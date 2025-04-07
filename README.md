@@ -1,3 +1,2 @@
 ## A Finance Mangement System
-Horizon is a complete responsive financial management system UI, built with JavaScript, Nextjs, and Tailwind.
-[horizon](https://horrizon.netlify.app/)
+FMS is a complete responsive finance management system UI, built with JavaScript, Nextjs, and Tailwind. View project [here](https://horrizon.netlify.app/).
