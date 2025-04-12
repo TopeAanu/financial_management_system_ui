@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function DashboardLayout({ children }) {
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen bg-gray-50 text-black dark:text-dark">
       {/* Sidebar Component */}
       <Sidebar />
 
