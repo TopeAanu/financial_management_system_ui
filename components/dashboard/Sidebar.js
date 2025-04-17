@@ -1,5 +1,5 @@
 // components/dashboard/Sidebar.jsx
-"use client"; // This file needs "use client" since it uses React hooks
+"use client"; 
 
 import Link from "next/link";
 import Image from "next/image";
@@ -56,7 +56,7 @@ export default function Sidebar() {
                   <path d="M7 12L12 7L17 12L12 17L7 12Z" fill="white" />
                 </svg>
               </div>
-              <span className="text-xl font-bold text-blue-900">Horizon</span>
+              <span className="text-xl font-bold text-blue-900">FMS</span>
             </Link>
           )}
           {isCollapsed && (
@@ -140,24 +140,13 @@ export default function Sidebar() {
                 />
               </div>
               <div className="flex-1">
-                <h4 className="font-medium text-sm">Adrian Hajdin</h4>
+                <h4 className="font-medium text-sm">Tope Fasasi</h4>
                 <p className="text-xs text-gray-500 truncate">
-                  adrian@jsmastery.pro
+                  tope@jsmastery.pro
                 </p>
               </div>
             </>
           )}
-          {/* {isCollapsed && (
-            <div className="mx-auto w-10 h-10">
-              <Image
-                src="/jsmastery2.jpg"
-                alt="User Profile"
-                width={40}
-                height={40}
-                className="rounded-full"
-              />
-            </div>
-          )} */}
           <button
             onClick={toggleSidebar}
             className="text-gray-400 hover:text-gray-600 ml-auto"

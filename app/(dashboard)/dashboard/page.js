@@ -16,19 +16,14 @@ export const metadata = {
 export default function DashboardLayout({ children }) {
   return (
     <div className="flex min-h-screen bg-gray-50 text-black dark:text-dark">
-      {/* Sidebar Component */}
       <Sidebar />
 
-      {/* Main Content Area - will adapt to sidebar width via client-side JS */}
       <div
         id="main-content"
         className="pl-64 flex-1 overflow-auto transition-all duration-300"
       >
-        {/* Main Content */}
         <div className="flex flex-col lg:flex-row w-full min-h-screen bg-gray-50">
-          {/* Main Content Area */}
           <div className="flex-1 p-6 overflow-y-auto h-screen">
-            {/* Welcome Header */}
             <div className="mb-6">
               <h1 className="text-2xl font-bold">
                 Welcome, <span className="text-blue-500">Adrian</span>
@@ -38,10 +33,8 @@ export default function DashboardLayout({ children }) {
               </p>
             </div>
 
-            {/* Render page content */}
             <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
 
-            {/* Account Summary */}
             <AccountSummary />
 
             {/* Transactions Section */}

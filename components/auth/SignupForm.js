@@ -63,7 +63,7 @@ export default function SignupForm() {
               <path d="M7 12L12 7L17 12L12 17L7 12Z" fill="white" />
             </svg>
           </div>
-          <span className="text-xl font-bold text-blue-900">Horizon</span>
+          <span className="text-xl font-bold text-blue-900">FMS</span>
         </Link>
       </div>
 
