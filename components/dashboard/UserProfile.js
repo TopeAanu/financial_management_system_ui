@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function UserProfile() {
   const user = {
-    name: "Adrian Hajdin",
-    email: "adrian@jsmastery.pro",
+    name: "Tope Fasasi",
+    email: "tope@jsmastery.pro",
     avatar: "/jsmastery2.jpg",
   };
 

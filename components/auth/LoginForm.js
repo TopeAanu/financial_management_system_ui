@@ -50,7 +50,7 @@ export default function LoginForm() {
         </Link>
       </div>
 
-      <h1 className="text-2xl font-bold mb-2">Log in</h1>
+      <h1 className="text-2xl text-gray-900 font-bold mb-2">Log in</h1>
       <p className="text-gray-600 mb-6">
         Welcome back! Please enter your details.
       </p>
@@ -67,7 +67,7 @@ export default function LoginForm() {
             id="email"
             type="email"
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 dark:placeholder-gray-500 dark:text-gray-900  dark:border-gray-700"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -85,7 +85,7 @@ export default function LoginForm() {
             id="password"
             type="password"
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 dark:placeholder-gray-500 dark:text-gray-900  dark:border-gray-700"
             placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}

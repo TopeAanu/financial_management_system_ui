@@ -9,7 +9,7 @@ export default function BankCards() {
       id: 1,
       bank: "JS Mastery Pro.",
       cardNumber: "1234 1234 1234 1234",
-      cardHolder: "ADRIAN HAJDIN",
+      cardHolder: "TOPE FASASI",
       expiryDate: "06/24",
       cardType: "visa",
       color: "bg-slate-800",
@@ -19,7 +19,7 @@ export default function BankCards() {
       id: 2,
       bank: "Chase",
       cardNumber: "1234 1234 1234 1234",
-      cardHolder: "ADRIAN HAJDIN",
+      cardHolder: "TOPE FASASI",
       expiryDate: "09/25",
       cardType: "mastercard",
       color: "bg-blue-500",
@@ -73,7 +73,7 @@ export default function BankCards() {
             </div>
 
             <div className="flex items-center">
-              <span className="text-sm uppercase">ADRIAN HAJDIN</span>
+              <span className="text-sm uppercase">TOPE FASASI</span>
               <div className="flex items-center">
                 <span className="text-sm mr-2 px-6">09/25</span>
               </div>
@@ -137,7 +137,7 @@ export default function BankCards() {
 
             <div className="flex flex-col justify-end h-full">
               <div className="flex items-center">
-                <span className="text-sm uppercase">ADRIAN HAJDIN</span>
+                <span className="text-sm uppercase">TOPE FASASI</span>
                 <div className="flex items-center">
                   <span className="text-sm px-10 mr-2">06/24</span>
                 </div>

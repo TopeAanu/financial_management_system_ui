@@ -26,7 +26,7 @@ export default function DashboardLayout({ children }) {
           <div className="flex-1 p-6 overflow-y-auto h-screen">
             <div className="mb-6">
               <h1 className="text-2xl font-bold">
-                Welcome, <span className="text-blue-500">Adrian</span>
+                Welcome, <span className="text-blue-500">Tope</span>
               </h1>
               <p className="text-gray-600">
                 Access & manage your account and transactions efficiently.
