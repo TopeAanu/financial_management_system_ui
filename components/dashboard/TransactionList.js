@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
+import { Music, User, Paintbrush, ShoppingBasket, Apple } from "lucide-react";
 
 export default function TransactionList() {
   const transactions = [
     {
       id: 1,
-      icon: "🎵",
+      icon: <Music size={16} />,
       merchantName: "Spotify",
       amount: -15.0,
       status: "Processing",
@@ -15,7 +15,7 @@ export default function TransactionList() {
     },
     {
       id: 2,
-      icon: "👩",
+      icon: <User size={16} />,
       merchantName: "Alexa Doe",
       amount: 88.0,
       status: "Success",
@@ -24,7 +24,7 @@ export default function TransactionList() {
     },
     {
       id: 3,
-      icon: "🎨",
+      icon: <Paintbrush size={16} />,
       merchantName: "Figma",
       amount: -18.99,
       status: "Processing",
@@ -33,7 +33,7 @@ export default function TransactionList() {
     },
     {
       id: 4,
-      icon: "FV",
+      icon: <ShoppingBasket size={16} />,
       merchantName: "Fresh F&V",
       amount: -88.0,
       status: "Success",
@@ -42,7 +42,7 @@ export default function TransactionList() {
     },
     {
       id: 5,
-      icon: "👨",
+      icon: <Apple size={16} />,
       merchantName: "Sam Sulek",
       amount: -40.2,
       status: "Declined",
@@ -107,33 +107,38 @@ export default function TransactionList() {
   return (
     <div>
       {/* Active Bank Info */}
-      <div className="flex items-start justify-between mb-6 p-4 bg-blue-50 rounded-lg">
-        <div className="flex items-center">
-          <div className="bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center mr-3">
-            <span className="font-medium text-sm">CB</span>
+      <div className="flex flex-col sm:flex-row items-start justify-between mb-4 sm:mb-6 p-3 sm:p-4 bg-blue-50 rounded-lg">
+        <div className="flex items-center w-full sm:w-auto mb-2 sm:mb-0">
+          <div className="bg-blue-500 text-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center mr-3">
+            <span className="font-medium text-xs sm:text-sm">CB</span>
           </div>
           <div>
-            <h3 className="text-lg font-medium pb-1">{activeBank.name}</h3>
+            <h3 className="text-base sm:text-lg font-medium pb-1">
+              {activeBank.name}
+            </h3>
             <span className="text-blue-500 font-bold">
               ${activeBank.balance.toLocaleString()}
             </span>
           </div>
         </div>
-        <span className="text-green-600 px-3 py-1 bg-green-50 rounded-full text-sm">
+        <span className="text-green-600 px-3 py-1 bg-green-50 rounded-full text-xs sm:text-sm">
           {activeBank.accountType}
         </span>
       </div>
 
-      {/* Transaction Table */}
-      <div className="w-full overflow-x-auto">
-        <table className="min-w-full">
+      {/* Transaction Table - Scrollable on all screen sizes */}
+      <div className="w-full overflow-x-auto pb-2">
+        <table
+          className="min-w-full whitespace-nowrap table-fixed"
+          style={{ minWidth: "700px" }}
+        >
           <thead>
             <tr className="text-left text-gray-500 bg-blue-50 text-sm border-b border-gray-200">
-              <th className="p-3 font-medium">Transaction</th>
-              <th className="p-3 font-medium">Amount</th>
-              <th className="p-3 font-medium">Status</th>
-              <th className="p-3 font-medium">Date</th>
-              <th className="p-3 font-medium">Category</th>
+              <th className="p-3 pl-4 font-medium w-2/5">Transaction</th>
+              <th className="p-3 font-medium w-1/6">Amount</th>
+              <th className="p-3 font-medium w-1/6">Status</th>
+              <th className="p-3 font-medium w-1/6">Date</th>
+              <th className="p-3 font-medium w-1/6">Category</th>
             </tr>
           </thead>
           <tbody>
@@ -145,11 +150,11 @@ export default function TransactionList() {
                 <td className="py-4 pl-4">
                   <div className="flex items-center">
                     <div
-                      className={`w-10 h-10 rounded-full ${getIconBgColor(
+                      className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full ${getIconBgColor(
                         transaction.merchantName
                       )} flex items-center justify-center text-white mr-3`}
                     >
-                      <span>{transaction.icon}</span>
+                      {transaction.icon}
                     </div>
                     <span className="font-medium">
                       {transaction.merchantName}

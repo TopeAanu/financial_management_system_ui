@@ -10,7 +10,7 @@ export default function AccountSummary() {
   return (
     <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
       <div className="flex">
-        <div className="relative w-24 h-24 mr-6 flex-shrink-0">
+        <div className="relative w-24 h-24 mr-6 flex-shrink-0 mt-4 sm:mt-0">
           {/* Circle progress indicator (simplified) */}
           <div className="w-full h-full rounded-full bg-100 border-8 border-blue-50"></div>
           <div

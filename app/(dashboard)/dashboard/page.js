@@ -20,15 +20,15 @@ export default function DashboardLayout({ children }) {
 
       <div
         id="main-content"
-        className="pl-64 flex-1 overflow-auto transition-all duration-300"
+        className="flex-1 w-full overflow-auto transition-all duration-300 lg:pl-64"
       >
         <div className="flex flex-col lg:flex-row w-full min-h-screen bg-gray-50">
-          <div className="flex-1 p-6 overflow-y-auto h-screen">
-            <div className="mb-6">
-              <h1 className="text-2xl font-bold">
-                Welcome, <span className="text-blue-500">Tope</span>
+          <div className="flex-1 p-4 md:p-6 overflow-y-auto">
+            <div className="mb-6 pt-12 lg:pt-0">
+              <h1 className="text-2xl font-bold mt-4 sm:mt-0">
+                Welcome, <span className="text-black-500">Tope</span>
               </h1>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mt-2 sm:mt-0">
                 Access & manage your account and transactions efficiently.
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function DashboardLayout({ children }) {
           </div>
 
           {/* Right Sidebar */}
-          <div className="w-full lg:w-80 xl:w-100 bg-white p-6 border-l border-gray-200 overflow-y-auto h-screen sticky top-0">
+          <div className="w-full lg:w-80 xl:w-96 bg-white p-6 border-l border-gray-200 overflow-y-auto sticky top-0">
             <UserProfile />
             <BankCards />
             <BudgetTracker />

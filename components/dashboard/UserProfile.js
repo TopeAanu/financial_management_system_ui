@@ -12,7 +12,7 @@ export default function UserProfile() {
 
   return (
     <div className="flex flex-col mb-10">
-      <div className="w-16 h-16 mt-20 mb-5 relative rounded-full bg-blue-100 flex items-center justify-center p-2 border-2 border-white shadow-md">
+      <div className="w-16 h-16 mt-8 sm:mt-20 mb-5 relative rounded-full bg-blue-100 flex items-center justify-center p-2 border-2 border-white shadow-md">
         <Image
           src={user.avatar}
           alt="User avatar"
