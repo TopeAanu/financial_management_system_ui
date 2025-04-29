@@ -9,8 +9,8 @@ export default function AccountSummary() {
 
   return (
     <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-100">
-      <div className="flex">
-        <div className="relative w-24 h-24 mr-6 flex-shrink-0 mt-4 sm:mt-0">
+      <div className="flex items-center">
+        <div className="relative w-24 h-24 mr-6 flex-shrink-0">
           {/* Circle progress indicator (simplified) */}
           <div className="w-full h-full rounded-full bg-100 border-8 border-blue-50"></div>
           <div
@@ -47,12 +47,12 @@ export default function AccountSummary() {
           ></div>
         </div>
 
-        <div className="flex-grow">
+        <div className="flex-grow flex flex-col justify-center">
           <div className="flex justify-between items-center w-full">
-            <span className="text-gray-700 font-medium">
+            <span className="text-gray-700 font-medium whitespace-nowrap">
               {bankAccounts} Bank Accounts
             </span>
-            <button className="text-blue-500 hover:text-blue-700 flex items-center text-sm font-medium">
+            <button className="text-blue-500 hover:text-blue-700 flex items-center text-sm font-medium whitespace-nowrap ml-2">
               <span className="mr-1">+</span> Add bank
             </button>
           </div>
@@ -61,7 +61,7 @@ export default function AccountSummary() {
             <span className="block text-gray-600 mb-1">
               Total Current Balance
             </span>
-            <span className="text-3xl font-bold">
+            <span className="text-2xl sm:text-3xl font-bold">
               ${accountBalance.toLocaleString()}
             </span>
           </div>
